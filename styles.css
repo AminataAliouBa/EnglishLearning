@@ -1,0 +1,184 @@
+/* Styles généraux pour le corps */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e6f7ff; /* Bleu clair */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Conteneur principal pour centrer le contenu */
+#main-container {
+  background-color: #ffffff; /* Blanc */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  max-width: 400px;
+  width: 90%; /* S'adapte à la taille de l'écran */
+  text-align: center;
+}
+
+/* Titre principal */
+h1 {
+  font-size: 24px;
+  color: #004080; /* Bleu foncé */
+  margin-bottom: 20px;
+}
+
+/* Zone de score */
+#score-box {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #004080;
+  border: 1px solid #b3d9ff;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #cceeff; /* Bleu pâle */
+}
+
+/* Styles pour les boîtes d'entrée */
+.input-box {
+  margin: 10px 0;
+}
+
+.input-box label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #004080;
+}
+
+
+
+.input-box input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #b3d9ff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+.input-box input.error {
+  border-color: red;
+}
+
+#output-box{
+  font-size: 16px;
+  font-weight: bold;
+  color: #004080;
+  text-align: center;
+  margin-top: 20px, 0;
+  border: 1px solid #b3d9ff;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #cceeff; /* Bleu pâle */
+  display: none;
+}
+
+.indicator {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Bouton de soumission */
+button#submit {
+  margin-top: 15px;
+  background-color: #0080ff; /* Bleu vif */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#submit:hover {
+  background-color: #0059b3; /* Bleu plus foncé */
+}
+
+/* Animations */
+.correct-animation {
+  background-color: #D4EDDA; /* Vert clair */
+  animation: fadeInOut 2s ease-in-out;
+}
+
+.incorrect-animation {
+  background-color: #F8D7DA; /* Rouge clair */
+  animation: fadeInOutRed 2s ease-in-out;
+}
+
+/* Effets de fondu pour les animations */
+@keyframes fadeInOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInOutRed {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+#score-box {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #004080;
+  border: 1px solid #b3d9ff;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #cceeff; /* Bleu pâle */
+  line-height: 1.8;
+}
+
+#timer {
+  color: #004080;
+  font-weight: bold;
+}
+
+#start {
+  
+}
+#stop {
+ display:none;
+}
+
+button {
+  border: none; /* Enlever les bordures des boutons */
+  background-color: transparent; /* Fond transparent pour ne montrer que l'image */
+  cursor: pointer; /* Change le curseur pour indiquer que c'est cliquable */
+}
+
+#start img, #stop img {
+  width: 50px; /* Largeur des images */
+  height: 50px; /* Hauteur des images */
+}
+
+#start:hover img, #stop:hover img {
+  transform: scale(1.1); /* Effet de zoom au survol */
+  transition: transform 0.2s ease; /* Animation fluide */
+}
+#question-box{
+  display: none;
+}
+
+button#essai {
+  display: none;
+  margin-top: 10px;
+  background-color: #ff007b; /* Bleu vif */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

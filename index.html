@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Révision des Verbes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="main-container">
+    <h1>Quiz Irregular Verbs</h1>
+    <div id="score-box" class="output-box">
+        Score: <span id="score">0</span> / <span id="total-verbes">0</span><br>
+        Timer: <span id="timer">00:00</span>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <button id="start">
+          <img src="start.jpeg" alt="Démarrer">
+        </button>
+        <button id="stop">
+          <img src="stop.jpeg" alt="Arrêter">
+        </button>
+    </div>
+
+    <div id="question-box">
+      <div id="question"></div>
+      <div id="traduction" class="input-box">
+        <label for="reponse_traduction">Traduction :</label>
+        <input type="text" id="reponse_traduction">
+        <div id="traduction-error" class="indicator"></div>
+      </div>
+      <div id="preterit" class="input-box">
+        <label for="reponse_preterit">Prétérit :</label>
+        <input type="text" id="reponse_preterit">
+        <div id="preterit-error" class="indicator"></div>
+      </div>
+      <div id="participe" class="input-box">
+        <label for="reponse_participe">Participe passé :</label>
+        <input type="text" id="reponse_participe">
+        <div id="participe-error" class="indicator"></div>
+      </div>
+      <button id="submit">Soumettre</button>
+      <button id="essai"></button>
+    </div>
+    <div id="output-box"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
